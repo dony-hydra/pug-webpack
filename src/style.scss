@@ -1,0 +1,10 @@
+$body-color: red;
+$test-color: green;
+
+body {
+  color: $body-color;
+}
+
+.test {
+  color: $test-color;
+}

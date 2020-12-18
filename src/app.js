@@ -1,6 +1,6 @@
 /* main.js */
-import './styles.css'
-alert('Success!')
+import './styles.css';
+import "./style.scss";
 
 console.log('1');
 console.log('2');
