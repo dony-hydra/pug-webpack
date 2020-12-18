@@ -2,10 +2,10 @@
 const path = require('path');
 // const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const fs = require('fs');
 
-const src = path.join(__dirname, 'src');
+// const src = path.join(__dirname, 'src');
 
 function generateHtmlPlugins(templateDir){
     // Read files in template directory
@@ -43,14 +43,21 @@ const config = {
     port: 9000
   },
   module: {
-    rules: [pug]
+    rules: [
+        pug,
+        {
+            test: /\.css$/i,
+            use: [MiniCssExtractPlugin.loader, 'css-loader'],
+        }
+    ]
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      filename: 'index.html',
-      template: 'src/index.pug',
-    //   inject: false
-    })
+    new MiniCssExtractPlugin({
+        // Options similar to the same options in webpackOptions.output
+        // both options are optional
+        filename: '[name].css',
+        chunkFilename: '[id].css',
+      }),
  ]
  .concat(htmlPlugins)
 };
