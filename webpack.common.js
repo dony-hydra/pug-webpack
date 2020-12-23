@@ -37,7 +37,8 @@ const config = {
   entry: './src/app.js',
   output: {
       path: path.resolve(__dirname, 'dist'),
-      filename: '[name].bundle.js'
+      filename: '[name].bundle.js',
+      publicPath:''
   },
   module: {
     rules: [
@@ -56,6 +57,10 @@ const config = {
               // Compiles Sass to CSS
               "sass-loader",
             ],
+        },
+        {
+            test: /\.(png|svg|jpg|jpeg|gif)$/i,
+            type: 'asset/resource',
         },
     ]
   },

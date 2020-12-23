@@ -11,13 +11,13 @@ Add attribute `devServer` like in `webpack.config.json`
 Run script
 
 ```
-npm run dev
+npm run start
 ```
 
 or
 
 ```
-yarn dev
+yarn start
 ```
 
 Build source
