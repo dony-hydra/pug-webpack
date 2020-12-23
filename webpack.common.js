@@ -19,7 +19,8 @@ function generateHtmlPlugins(templateDir){
         // Create new HTMLWebpackPlugin with options
         return new HtmlWebpackPlugin({
             filename:`${name}.html`,
-            template: path.resolve(__dirname,`${templateDir}/${name}.${extension}`)
+            template: path.resolve(__dirname,`${templateDir}/${name}.${extension}`),
+            minify:false
         })
     })
 }
@@ -28,8 +29,8 @@ function generateHtmlPlugins(templateDir){
 const htmlPlugins = generateHtmlPlugins('./src/template/views');
 
 const pug = {
-  test: /\.pug$/,
-  use: ['html-loader', 'pug-html-loader?pretty=true']
+    test: /\.pug/,
+    use: ['html-loader?minimize=false', 'pug-html-loader?pretty=true'],
 };
 
 const config = {
