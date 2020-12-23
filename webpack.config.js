@@ -1,8 +1,9 @@
 /* Webpack.config.js*/
 const path = require('path');
-// const webpack = require('webpack');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const DashboardPlugin = require("webpack-dashboard/plugin");
 const fs = require('fs');
 
 // const src = path.join(__dirname, 'src');
@@ -40,8 +41,13 @@ const config = {
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
+    liveReload:true,
     open:true,
-    port: 9000
+    port: 9000,
+    overlay: {
+        warnings:true,
+        errors:true
+    }
   },
   module: {
     rules: [
@@ -64,6 +70,7 @@ const config = {
     ]
   },
   plugins: [
+    new DashboardPlugin(),
     new MiniCssExtractPlugin({
         // Options similar to the same options in webpackOptions.output
         // both options are optional

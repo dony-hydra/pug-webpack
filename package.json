@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "watch": "webpack --watch --mode development",
+    "watch:d": "webpack-dashboard -- webpack --watch --mode development",
     "build": "webpack --mode production",
-    "dev": "webpack serve"
+    "dev": "webpack serve --mode development",
+    "dev:d": "webpack-dashboard -- webpack serve --mode development"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +26,7 @@
     "style-loader": "^2.0.0",
     "webpack": "^5.10.3",
     "webpack-cli": "^4.2.0",
+    "webpack-dashboard": "^3.2.1",
     "webpack-dev-server": "^3.11.0"
   }
 }
