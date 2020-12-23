@@ -28,7 +28,7 @@ const htmlPlugins = generateHtmlPlugins('./src/template/views');
 
 const pug = {
   test: /\.pug$/,
-  use: ['html-loader', 'pug-html-loader']
+  use: ['html-loader', 'pug-html-loader?pretty=true']
 };
 
 const config = {

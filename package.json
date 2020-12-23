@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch": "webpack --watch --mode development",
-    "prod": "webpack --mode production",
+    "build": "webpack --mode production",
     "dev": "webpack serve"
   },
   "keywords": [],
