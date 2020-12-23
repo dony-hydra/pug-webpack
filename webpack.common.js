@@ -38,17 +38,6 @@ const config = {
       path: path.resolve(__dirname, 'dist'),
       filename: '[name].bundle.js'
   },
-  devServer: {
-    contentBase: path.join(__dirname, 'dist'),
-    compress: true,
-    liveReload:true,
-    open:true,
-    port: 9000,
-    overlay: {
-        warnings:true,
-        errors:true
-    }
-  },
   module: {
     rules: [
         pug,

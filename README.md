@@ -11,7 +11,13 @@ Add attribute `devServer` like in `webpack.config.json`
 Run script
 
 ```
-npm run start:dev
+npm run dev
+```
+
+or
+
+```
+yarn dev
 ```
 
 Build source
@@ -25,13 +31,14 @@ npm run prod
 Run script
 
 ```
-npm run dev
+npm run watch
 ```
 
 And start plugin `Go Live` of Visual Code
 
 To Do
 
-- Load SCSS
+- Load SCSS (Done)
 - HTML
 - Images
+- Reformation webpack serve dev
