@@ -30,7 +30,7 @@ Start with script
 ```
 $ cd pug-webpack
 $ npm install
-$ npm start
+$ npm start:d
 ```
 
 ## Contributing
