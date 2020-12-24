@@ -1,44 +1,38 @@
 # pug-webpack
 
-We have 2 option for work with webpack
+[![GitHub issues](https://img.shields.io/github/issues/dony-hydra/pug-webpack?style=flat-square)](https://github.com/dony-hydra/pug-webpack/issues) [![GitHub forks](https://img.shields.io/github/forks/dony-hydra/pug-webpack?style=flat-square)](https://github.com/dony-hydra/pug-webpack/network)
+[![Twitter](https://img.shields.io/twitter/url?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fdony-hydra%2Fpug-webpack)
 
-- Webpack server
+If you use PugJS of a UI project that you want to find author way instead of Gulp.
 
-Setup in webpack config
+It use webpack-dev-server under hood, which provides fast in memory access.
 
-Add attribute `devServer` like in `webpack.config.json`
+## Demo
 
-Run script
+## Features
 
-```
-npm run start
-```
+- Load PugJS
+- Load SCSS
+- Load CSS
+- HTML Pretty
+- Load Images
 
-or
+### Todo
 
-```
-yarn start
-```
+- LESS
 
-Build source
+## Setup
 
-```
-npm run prod
-```
-
-- Webpack with option `watch`
-
-Run script
+Start with script
 
 ```
-npm run watch
+$ cd pug-webpack
+$ npm install
+$ npm start
 ```
 
-And start plugin `Go Live` of Visual Code
+## Contributing
 
-To Do
+I welcome your contributions! Please have let me you if you any feed back.
 
-- Load SCSS (Done)
-- HTML
-- Images
-- Reformation webpack serve dev
+## Author
