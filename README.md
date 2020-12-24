@@ -9,6 +9,8 @@ It use webpack-dev-server under hood, which provides fast in memory access.
 
 ## Demo
 
+![alt text](https://raw.githubusercontent.com/dony-hydra/pug-webpack/main/demo.png)
+
 ## Features
 
 - Load PugJS
